@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="digital-7.ttf">
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OutaTimeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI8-EC-gyf">
+                                <rect key="frame" x="207" y="491" width="187" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Set Destination Time"/>
+                                <connections>
+                                    <action selector="takeOffButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5d5-oK-iXd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hft-Lm-2AL">
+                                <rect key="frame" x="283" y="394" width="34" height="64"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psY-BE-BVE">
+                                <rect key="frame" x="241" y="138" width="118" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 14 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElE-DL-38Y">
+                                <rect key="frame" x="208" y="180" width="185" height="37"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Time Departed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEG-vU-ph9">
+                                <rect key="frame" x="224" y="257" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfk-jN-AMq">
+                                <rect key="frame" x="244" y="302" width="113" height="28"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-Ob-9zw">
+                                <rect key="frame" x="275" y="346" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXB-z9-ZzQ">
+                                <rect key="frame" x="248" y="544" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Travel Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFa-W0-G9C">
+                                <rect key="frame" x="224" y="52" width="152" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="--- -- ---" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wuf-IL-0M6">
+                                <rect key="frame" x="215" y="91" width="171" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="Go0-PM-2iZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wuf-IL-0M6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dK-Nc-I0W"/>
+                            <constraint firstItem="5ki-Ob-9zw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="326" id="4B1-Bd-Kig"/>
+                            <constraint firstItem="psY-BE-BVE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="53q-d8-UWM"/>
+                            <constraint firstItem="Wuf-IL-0M6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="8rH-6d-aJD"/>
+                            <constraint firstItem="WFa-W0-G9C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BM7-pB-GbM"/>
+                            <constraint firstItem="WFa-W0-G9C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="DZL-ZV-O35"/>
+                            <constraint firstItem="hft-Lm-2AL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dya-FN-vFX"/>
+                            <constraint firstItem="5ki-Ob-9zw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K05-OA-40n"/>
+                            <constraint firstItem="ElE-DL-38Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="KRo-Mm-yFp"/>
+                            <constraint firstItem="psY-BE-BVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MCo-wJ-Vv8"/>
+                            <constraint firstItem="RI8-EC-gyf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKp-Lc-d7x"/>
+                            <constraint firstItem="mEG-vU-ph9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TK5-XU-HyN"/>
+                            <constraint firstItem="WFa-W0-G9C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNr-f1-z2J"/>
+                            <constraint firstItem="RI8-EC-gyf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="471" id="bA7-UZ-B5F"/>
+                            <constraint firstItem="vfk-jN-AMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cA2-b1-CT1"/>
+                            <constraint firstItem="AXB-z9-ZzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cat-ZJ-HPX"/>
+                            <constraint firstItem="ElE-DL-38Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g78-7f-D05"/>
+                            <constraint firstItem="mEG-vU-ph9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="237" id="igh-cL-aO1"/>
+                            <constraint firstItem="vfk-jN-AMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="282" id="mli-Fg-njd"/>
+                            <constraint firstItem="hft-Lm-2AL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="374" id="rt0-em-Wu1"/>
+                            <constraint firstItem="AXB-z9-ZzQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="524" id="x7S-33-wF4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BM7-pB-GbM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="hft-Lm-2AL" id="Z3i-NW-abg"/>
+                        <segue destination="bMf-ln-Vjx" kind="show" identifier="futureSegue" id="exR-QL-OY1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="353"/>
+        </scene>
+        <!--Future View Controller-->
+        <scene sceneID="nD1-kR-qsf">
+            <objects>
+                <viewController id="bMf-ln-Vjx" customClass="FutureViewController" customModule="OutaTimeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fka-CE-jcM"/>
+                        <viewControllerLayoutGuide type="bottom" id="XuB-pe-iSY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZWP-C1-Phd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To The Future!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZH-2P-33a">
+                                <rect key="frame" x="139" y="79" width="323" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stark_Tower" translatesAutoresizingMaskIntoConstraints="NO" id="YIT-A7-C42">
+                                <rect key="frame" x="150" y="161" width="300" height="278"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZe-SH-har">
+                                <rect key="frame" x="137" y="502" width="326" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Set Another Time Destination"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YIT-A7-C42" firstAttribute="top" secondItem="Fka-CE-jcM" secondAttribute="bottom" constant="141" id="1YA-L7-o7v"/>
+                            <constraint firstItem="VZH-2P-33a" firstAttribute="top" secondItem="Fka-CE-jcM" secondAttribute="bottom" constant="59" id="Ehz-qy-X9Y"/>
+                            <constraint firstItem="VZH-2P-33a" firstAttribute="centerX" secondItem="ZWP-C1-Phd" secondAttribute="centerX" id="UeH-ZZ-peX"/>
+                            <constraint firstItem="yZe-SH-har" firstAttribute="centerX" secondItem="ZWP-C1-Phd" secondAttribute="centerX" id="dUt-jm-cDV"/>
+                            <constraint firstItem="YIT-A7-C42" firstAttribute="centerX" secondItem="ZWP-C1-Phd" secondAttribute="centerX" id="kdP-eu-Ddq"/>
+                            <constraint firstItem="yZe-SH-har" firstAttribute="top" secondItem="Fka-CE-jcM" secondAttribute="bottom" constant="482" id="pOg-Om-rf0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LeC-5Y-ZOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Stark_Tower" width="300" height="278"/>
+    </resources>
+</document>
