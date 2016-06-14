@@ -15,31 +15,38 @@ class ViewController: UIViewController {
     @IBOutlet weak var PasswordLabel: UITextField!
     
     @IBOutlet weak var AuthenticateButton: UIButton!
+    @IBOutlet weak var greetingLabel: UILabel!
     
  
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func textFieldShouldReturn(textField:UITextField) ->
+        Bool {
 
-        
-        
-    }
-    @IBOutlet weak var AuthenticateButtonTapped: UIButton!
-    
-    if UsernameLabel = "Taylor Frost" && PasswordLabel = "111111"{
-    
-    } self.view.backgroundColor = [UIColor greenColor];
-    
-    
-else if (UsernameLabel != "Taylor Frost" && PasswordLabel != "111111") {
-    
-    self.view.backgroundColor = [UIColor redColor];
-    
+
+            if textField == UsernameLabel {
+                PasswordLabel.becomeFirstResponder()
+            } else {
+                textField.resignFirstResponder()
+            }
+            return true
 }
 
+    @IBAction func authTapped(sender: UIButton) {
+    
 
+//    let secretAgent = "Frost"
+    
+    if (self.UsernameLabel.text! == "Taylor") &&
+        (self.PasswordLabel.text! == "password") {
+    
+    self.view.backgroundColor = UIColor.greenColor()
+//    self.greetingLabel.text = "Good Evening, Agent \(secretAgent)"
+    } else {
+    
+    self.view.backgroundColor = UIColor.redColor()
+    }
 
+}
 
+}
 
 

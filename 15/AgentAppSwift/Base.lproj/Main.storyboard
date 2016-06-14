@@ -37,10 +37,19 @@
                                 <rect key="frame" x="216" y="452" width="169" height="47"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyw-sU-XT6"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tom-Cruise-as-Ethan-Hunt-in-Mission-Impossible-Ghost-Protocol" translatesAutoresizingMaskIntoConstraints="NO" id="70E-6r-9mY">
                                 <rect key="frame" x="150" y="56" width="300" height="236"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F21-w9-AlA">
+                                <rect key="frame" x="279" y="517" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,6 +68,7 @@
                         <outlet property="AuthenticateButtonTapped" destination="PnN-q7-4q4" id="q2I-GL-KeK"/>
                         <outlet property="PasswordLabel" destination="Z71-Pj-amq" id="biu-ph-cwi"/>
                         <outlet property="UsernameLabel" destination="N7s-gh-rtX" id="aIu-r4-cbC"/>
+                        <outlet property="greetingLabel" destination="F21-w9-AlA" id="Ew9-a0-Ytf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
