@@ -14,8 +14,8 @@
 		FD9F340F1D106EED00BAE265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9F340D1D106EED00BAE265 /* LaunchScreen.storyboard */; };
 		FD9F341A1D106EED00BAE265 /* OutaTimeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9F34191D106EED00BAE265 /* OutaTimeSwiftTests.swift */; };
 		FD9F34251D106EED00BAE265 /* OutaTimeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9F34241D106EED00BAE265 /* OutaTimeSwiftUITests.swift */; };
-		FD9F34331D107C5C00BAE265 /* FutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9F34321D107C5C00BAE265 /* FutureViewController.swift */; };
 		FD9F34351D107E0A00BAE265 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD9F34341D107E0A00BAE265 /* digital-7.ttf */; };
+		FD9F34371D10AD7900BAE265 /* FutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9F34361D10AD7900BAE265 /* FutureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		FD9F34201D106EED00BAE265 /* OutaTimeSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutaTimeSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9F34241D106EED00BAE265 /* OutaTimeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutaTimeSwiftUITests.swift; sourceTree = "<group>"; };
 		FD9F34261D106EED00BAE265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD9F34321D107C5C00BAE265 /* FutureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureViewController.swift; sourceTree = "<group>"; };
 		FD9F34341D107E0A00BAE265 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		FD9F34361D10AD7900BAE265 /* FutureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 			children = (
 				FD9F34041D106EED00BAE265 /* AppDelegate.swift */,
 				FD9F34061D106EED00BAE265 /* ViewController.swift */,
-				FD9F34321D107C5C00BAE265 /* FutureViewController.swift */,
+				FD9F34361D10AD7900BAE265 /* FutureViewController.swift */,
 				FD9F34081D106EED00BAE265 /* Main.storyboard */,
 				FD9F340B1D106EED00BAE265 /* Assets.xcassets */,
 				FD9F340D1D106EED00BAE265 /* LaunchScreen.storyboard */,
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD9F34071D106EED00BAE265 /* ViewController.swift in Sources */,
-				FD9F34331D107C5C00BAE265 /* FutureViewController.swift in Sources */,
+				FD9F34371D10AD7900BAE265 /* FutureViewController.swift in Sources */,
 				FD9F34051D106EED00BAE265 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

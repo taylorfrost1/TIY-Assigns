@@ -25,14 +25,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI8-EC-gyf">
-                                <rect key="frame" x="207" y="491" width="187" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Set Destination Time"/>
-                                <connections>
-                                    <action selector="takeOffButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5d5-oK-iXd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hft-Lm-2AL">
                                 <rect key="frame" x="283" y="394" width="34" height="64"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="70"/>
@@ -69,11 +61,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXB-z9-ZzQ">
-                                <rect key="frame" x="248" y="544" width="104" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Travel Back"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFa-W0-G9C">
                                 <rect key="frame" x="224" y="52" width="152" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -87,7 +74,18 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1hr-Sf-g8h"/>
+                                </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI8-EC-gyf">
+                                <rect key="frame" x="185" y="497" width="231" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Set Destination Time"/>
+                                <connections>
+                                    <action selector="takeOffButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5d5-oK-iXd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -98,20 +96,18 @@
                             <constraint firstItem="WFa-W0-G9C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BM7-pB-GbM"/>
                             <constraint firstItem="WFa-W0-G9C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="DZL-ZV-O35"/>
                             <constraint firstItem="hft-Lm-2AL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dya-FN-vFX"/>
+                            <constraint firstItem="RI8-EC-gyf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G98-Uq-jEc"/>
                             <constraint firstItem="5ki-Ob-9zw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K05-OA-40n"/>
                             <constraint firstItem="ElE-DL-38Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="KRo-Mm-yFp"/>
                             <constraint firstItem="psY-BE-BVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MCo-wJ-Vv8"/>
-                            <constraint firstItem="RI8-EC-gyf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKp-Lc-d7x"/>
                             <constraint firstItem="mEG-vU-ph9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TK5-XU-HyN"/>
+                            <constraint firstItem="RI8-EC-gyf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="477" id="WUu-sq-SjK"/>
                             <constraint firstItem="WFa-W0-G9C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNr-f1-z2J"/>
-                            <constraint firstItem="RI8-EC-gyf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="471" id="bA7-UZ-B5F"/>
                             <constraint firstItem="vfk-jN-AMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cA2-b1-CT1"/>
-                            <constraint firstItem="AXB-z9-ZzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cat-ZJ-HPX"/>
                             <constraint firstItem="ElE-DL-38Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g78-7f-D05"/>
                             <constraint firstItem="mEG-vU-ph9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="237" id="igh-cL-aO1"/>
                             <constraint firstItem="vfk-jN-AMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="282" id="mli-Fg-njd"/>
                             <constraint firstItem="hft-Lm-2AL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="374" id="rt0-em-Wu1"/>
-                            <constraint firstItem="AXB-z9-ZzQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="524" id="x7S-33-wF4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -121,7 +117,10 @@
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="hft-Lm-2AL" id="Z3i-NW-abg"/>
-                        <segue destination="bMf-ln-Vjx" kind="show" identifier="futureSegue" id="exR-QL-OY1"/>
+                        <outlet property="inputDateTextField" destination="Wuf-IL-0M6" id="zvx-27-dPI"/>
+                        <outlet property="lastTimeDepartedLabel" destination="vfk-jN-AMq" id="aLM-JP-HBi"/>
+                        <outlet property="presentTimeLabel" destination="ElE-DL-38Y" id="qvZ-cf-EKC"/>
+                        <segue destination="bMf-ln-Vjx" kind="presentation" identifier="futureSegue" id="uMm-wS-333"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -153,6 +152,9 @@
                                 <rect key="frame" x="137" y="502" width="326" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Set Another Time Destination"/>
+                                <connections>
+                                    <segue destination="hhD-Ui-Mpu" kind="unwind" unwindAction="unwindSegue:" id="J8e-8T-lvS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,12 +163,14 @@
                             <constraint firstItem="VZH-2P-33a" firstAttribute="top" secondItem="Fka-CE-jcM" secondAttribute="bottom" constant="59" id="Ehz-qy-X9Y"/>
                             <constraint firstItem="VZH-2P-33a" firstAttribute="centerX" secondItem="ZWP-C1-Phd" secondAttribute="centerX" id="UeH-ZZ-peX"/>
                             <constraint firstItem="yZe-SH-har" firstAttribute="centerX" secondItem="ZWP-C1-Phd" secondAttribute="centerX" id="dUt-jm-cDV"/>
+                            <constraint firstItem="yZe-SH-har" firstAttribute="top" secondItem="YIT-A7-C42" secondAttribute="bottom" constant="63" id="eug-ZZ-Gkq"/>
                             <constraint firstItem="YIT-A7-C42" firstAttribute="centerX" secondItem="ZWP-C1-Phd" secondAttribute="centerX" id="kdP-eu-Ddq"/>
                             <constraint firstItem="yZe-SH-har" firstAttribute="top" secondItem="Fka-CE-jcM" secondAttribute="bottom" constant="482" id="pOg-Om-rf0"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeC-5Y-ZOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hhD-Ui-Mpu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="805" y="352"/>
         </scene>
