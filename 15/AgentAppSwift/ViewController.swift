@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var UsernameLabel: UITextField!
     
@@ -33,13 +33,13 @@ class ViewController: UIViewController {
     @IBAction func authTapped(sender: UIButton) {
     
 
-//    let secretAgent = "Frost"
+    let secretAgent = "Frost"
     
     if (self.UsernameLabel.text! == "Taylor") &&
         (self.PasswordLabel.text! == "password") {
     
     self.view.backgroundColor = UIColor.greenColor()
-//    self.greetingLabel.text = "Good Evening, Agent \(secretAgent)"
+    self.greetingLabel.text = "Good Evening, Agent \(secretAgent)"
     } else {
     
     self.view.backgroundColor = UIColor.redColor()
