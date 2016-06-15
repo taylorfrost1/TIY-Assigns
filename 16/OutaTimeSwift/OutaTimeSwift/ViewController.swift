@@ -63,7 +63,7 @@ override func viewDidLoad() {
     }
     
     func enteredDate() {
-    self.formattedDate.dateFormat = "MMddyyy"
+    self.formattedDate.dateFormat = "MMddyy"
     if let dateEntered = self.inputDateTextField.text {
         
         if let theDate = self.formattedDate.dateFromString(dateEntered) {
