@@ -1,4 +1,3 @@
-//: Playground - noun: a place where people can play
 
 var numberOfOranges = 1
 var numberOfApples = 5
@@ -41,7 +40,7 @@ if age >= 18 {
     if money >=  20000 {
         
         print("Buying a new car today")
-    
+        
     } else { print("Sorry, not enough money")
         
     }
@@ -56,7 +55,7 @@ if myAge >= 13 {
     
     if age <= 19 {
         
-    print("Still a teenager")
+        print("Still a teenager")
     }
 }
 
@@ -90,3 +89,4 @@ if !(age >=  13 && age <= 19){
     
     print("Not a teenager")
 }
+
