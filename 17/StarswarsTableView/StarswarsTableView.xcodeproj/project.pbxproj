@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD81ABEE1D11C3BC00856576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81ABED1D11C3BC00856576 /* AppDelegate.swift */; };
+		FD81ABF31D11C3BC00856576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD81ABF11D11C3BC00856576 /* Main.storyboard */; };
+		FD81ABF51D11C3BC00856576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD81ABF41D11C3BC00856576 /* Assets.xcassets */; };
+		FD81ABF81D11C3BC00856576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD81ABF61D11C3BC00856576 /* LaunchScreen.storyboard */; };
+		FD81AC031D11C3BC00856576 /* StarswarsTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81AC021D11C3BC00856576 /* StarswarsTableViewTests.swift */; };
+		FD81AC0E1D11C3BC00856576 /* StarswarsTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81AC0D1D11C3BC00856576 /* StarswarsTableViewUITests.swift */; };
+		FD81AC201D11C48800856576 /* StarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81AC1F1D11C48800856576 /* StarTableViewController.swift */; };
+		FDF48F391D11CA75004ADEBE /* StarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF48F381D11CA75004ADEBE /* StarTableViewCell.swift */; };
+		FDF48F3C1D11CB7C004ADEBE /* Starwars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF48F3B1D11CB7C004ADEBE /* Starwars.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD81ABFF1D11C3BC00856576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD81ABE21D11C3BC00856576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD81ABE91D11C3BC00856576;
+			remoteInfo = StarswarsTableView;
+		};
+		FD81AC0A1D11C3BC00856576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD81ABE21D11C3BC00856576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD81ABE91D11C3BC00856576;
+			remoteInfo = StarswarsTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD81ABEA1D11C3BC00856576 /* StarswarsTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarswarsTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD81ABED1D11C3BC00856576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD81ABF21D11C3BC00856576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD81ABF41D11C3BC00856576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD81ABF71D11C3BC00856576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD81ABF91D11C3BC00856576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD81ABFE1D11C3BC00856576 /* StarswarsTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarswarsTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD81AC021D11C3BC00856576 /* StarswarsTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarswarsTableViewTests.swift; sourceTree = "<group>"; };
+		FD81AC041D11C3BC00856576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD81AC091D11C3BC00856576 /* StarswarsTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarswarsTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD81AC0D1D11C3BC00856576 /* StarswarsTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarswarsTableViewUITests.swift; sourceTree = "<group>"; };
+		FD81AC0F1D11C3BC00856576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD81AC1F1D11C48800856576 /* StarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTableViewController.swift; sourceTree = "<group>"; };
+		FDF48F381D11CA75004ADEBE /* StarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarTableViewCell.swift; sourceTree = "<group>"; };
+		FDF48F3B1D11CB7C004ADEBE /* Starwars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starwars.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD81ABE71D11C3BC00856576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81ABFB1D11C3BC00856576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81AC061D11C3BC00856576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD81ABE11D11C3BC00856576 = {
+			isa = PBXGroup;
+			children = (
+				FD81ABEC1D11C3BC00856576 /* StarswarsTableView */,
+				FD81AC011D11C3BC00856576 /* StarswarsTableViewTests */,
+				FD81AC0C1D11C3BC00856576 /* StarswarsTableViewUITests */,
+				FD81ABEB1D11C3BC00856576 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD81ABEB1D11C3BC00856576 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD81ABEA1D11C3BC00856576 /* StarswarsTableView.app */,
+				FD81ABFE1D11C3BC00856576 /* StarswarsTableViewTests.xctest */,
+				FD81AC091D11C3BC00856576 /* StarswarsTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD81ABEC1D11C3BC00856576 /* StarswarsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FD81ABED1D11C3BC00856576 /* AppDelegate.swift */,
+				FDF48F3D1D11CB81004ADEBE /* Modal */,
+				FDF48F3A1D11CA7F004ADEBE /* Views */,
+				FD81AC211D11C49400856576 /* View Controllers */,
+				FD81ABF11D11C3BC00856576 /* Main.storyboard */,
+				FD81ABF41D11C3BC00856576 /* Assets.xcassets */,
+				FD81ABF61D11C3BC00856576 /* LaunchScreen.storyboard */,
+				FD81ABF91D11C3BC00856576 /* Info.plist */,
+			);
+			path = StarswarsTableView;
+			sourceTree = "<group>";
+		};
+		FD81AC011D11C3BC00856576 /* StarswarsTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD81AC021D11C3BC00856576 /* StarswarsTableViewTests.swift */,
+				FD81AC041D11C3BC00856576 /* Info.plist */,
+			);
+			path = StarswarsTableViewTests;
+			sourceTree = "<group>";
+		};
+		FD81AC0C1D11C3BC00856576 /* StarswarsTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD81AC0D1D11C3BC00856576 /* StarswarsTableViewUITests.swift */,
+				FD81AC0F1D11C3BC00856576 /* Info.plist */,
+			);
+			path = StarswarsTableViewUITests;
+			sourceTree = "<group>";
+		};
+		FD81AC211D11C49400856576 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD81AC1F1D11C48800856576 /* StarTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FDF48F3A1D11CA7F004ADEBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDF48F381D11CA75004ADEBE /* StarTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FDF48F3D1D11CB81004ADEBE /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				FDF48F3B1D11CB7C004ADEBE /* Starwars.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD81ABE91D11C3BC00856576 /* StarswarsTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD81AC121D11C3BC00856576 /* Build configuration list for PBXNativeTarget "StarswarsTableView" */;
+			buildPhases = (
+				FD81ABE61D11C3BC00856576 /* Sources */,
+				FD81ABE71D11C3BC00856576 /* Frameworks */,
+				FD81ABE81D11C3BC00856576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarswarsTableView;
+			productName = StarswarsTableView;
+			productReference = FD81ABEA1D11C3BC00856576 /* StarswarsTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD81ABFD1D11C3BC00856576 /* StarswarsTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD81AC151D11C3BC00856576 /* Build configuration list for PBXNativeTarget "StarswarsTableViewTests" */;
+			buildPhases = (
+				FD81ABFA1D11C3BC00856576 /* Sources */,
+				FD81ABFB1D11C3BC00856576 /* Frameworks */,
+				FD81ABFC1D11C3BC00856576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD81AC001D11C3BC00856576 /* PBXTargetDependency */,
+			);
+			name = StarswarsTableViewTests;
+			productName = StarswarsTableViewTests;
+			productReference = FD81ABFE1D11C3BC00856576 /* StarswarsTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD81AC081D11C3BC00856576 /* StarswarsTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD81AC181D11C3BC00856576 /* Build configuration list for PBXNativeTarget "StarswarsTableViewUITests" */;
+			buildPhases = (
+				FD81AC051D11C3BC00856576 /* Sources */,
+				FD81AC061D11C3BC00856576 /* Frameworks */,
+				FD81AC071D11C3BC00856576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD81AC0B1D11C3BC00856576 /* PBXTargetDependency */,
+			);
+			name = StarswarsTableViewUITests;
+			productName = StarswarsTableViewUITests;
+			productReference = FD81AC091D11C3BC00856576 /* StarswarsTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD81ABE21D11C3BC00856576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Taylor Frost";
+				TargetAttributes = {
+					FD81ABE91D11C3BC00856576 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FD81ABFD1D11C3BC00856576 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD81ABE91D11C3BC00856576;
+					};
+					FD81AC081D11C3BC00856576 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FD81ABE91D11C3BC00856576;
+					};
+				};
+			};
+			buildConfigurationList = FD81ABE51D11C3BC00856576 /* Build configuration list for PBXProject "StarswarsTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD81ABE11D11C3BC00856576;
+			productRefGroup = FD81ABEB1D11C3BC00856576 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD81ABE91D11C3BC00856576 /* StarswarsTableView */,
+				FD81ABFD1D11C3BC00856576 /* StarswarsTableViewTests */,
+				FD81AC081D11C3BC00856576 /* StarswarsTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD81ABE81D11C3BC00856576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81ABF81D11C3BC00856576 /* LaunchScreen.storyboard in Resources */,
+				FD81ABF51D11C3BC00856576 /* Assets.xcassets in Resources */,
+				FD81ABF31D11C3BC00856576 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81ABFC1D11C3BC00856576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81AC071D11C3BC00856576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD81ABE61D11C3BC00856576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF48F3C1D11CB7C004ADEBE /* Starwars.swift in Sources */,
+				FD81ABEE1D11C3BC00856576 /* AppDelegate.swift in Sources */,
+				FDF48F391D11CA75004ADEBE /* StarTableViewCell.swift in Sources */,
+				FD81AC201D11C48800856576 /* StarTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81ABFA1D11C3BC00856576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81AC031D11C3BC00856576 /* StarswarsTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81AC051D11C3BC00856576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81AC0E1D11C3BC00856576 /* StarswarsTableViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD81AC001D11C3BC00856576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD81ABE91D11C3BC00856576 /* StarswarsTableView */;
+			targetProxy = FD81ABFF1D11C3BC00856576 /* PBXContainerItemProxy */;
+		};
+		FD81AC0B1D11C3BC00856576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD81ABE91D11C3BC00856576 /* StarswarsTableView */;
+			targetProxy = FD81AC0A1D11C3BC00856576 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD81ABF11D11C3BC00856576 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD81ABF21D11C3BC00856576 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD81ABF61D11C3BC00856576 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD81ABF71D11C3BC00856576 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD81AC101D11C3BC00856576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD81AC111D11C3BC00856576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD81AC131D11C3BC00856576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StarswarsTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.StarswarsTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD81AC141D11C3BC00856576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StarswarsTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.StarswarsTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD81AC161D11C3BC00856576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StarswarsTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.StarswarsTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarswarsTableView.app/StarswarsTableView";
+			};
+			name = Debug;
+		};
+		FD81AC171D11C3BC00856576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StarswarsTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.StarswarsTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarswarsTableView.app/StarswarsTableView";
+			};
+			name = Release;
+		};
+		FD81AC191D11C3BC00856576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StarswarsTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.StarswarsTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StarswarsTableView;
+			};
+			name = Debug;
+		};
+		FD81AC1A1D11C3BC00856576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StarswarsTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.StarswarsTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StarswarsTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD81ABE51D11C3BC00856576 /* Build configuration list for PBXProject "StarswarsTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81AC101D11C3BC00856576 /* Debug */,
+				FD81AC111D11C3BC00856576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD81AC121D11C3BC00856576 /* Build configuration list for PBXNativeTarget "StarswarsTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81AC131D11C3BC00856576 /* Debug */,
+				FD81AC141D11C3BC00856576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD81AC151D11C3BC00856576 /* Build configuration list for PBXNativeTarget "StarswarsTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81AC161D11C3BC00856576 /* Debug */,
+				FD81AC171D11C3BC00856576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD81AC181D11C3BC00856576 /* Build configuration list for PBXNativeTarget "StarswarsTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81AC191D11C3BC00856576 /* Debug */,
+				FD81AC1A1D11C3BC00856576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD81ABE21D11C3BC00856576 /* Project object */;
+}

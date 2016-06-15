@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ewJ-He-3vf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Star Table View Controller-->
+        <scene sceneID="47T-QB-zgY">
+            <objects>
+                <tableViewController id="zXo-2h-ENW" customClass="StarTableViewController" customModule="StarswarsTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="152" sectionHeaderHeight="28" sectionFooterHeight="28" id="5wo-BD-TeO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="152" id="Mab-Un-vIe" customClass="StarTableViewCell" customModule="StarswarsTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="152"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mab-Un-vIe" id="YFi-za-1xc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="151"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DYO-3G-PL1">
+                                            <rect key="frame" x="8" y="8" width="100" height="135"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="7wA-u9-Qbh"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="yIj-dv-9HV"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="yIj-dv-9HV"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdx-ew-3Go">
+                                            <rect key="frame" x="116" y="65" width="476" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="DYO-3G-PL1" secondAttribute="bottom" constant="8" id="4Mw-TN-wEV"/>
+                                        <constraint firstItem="pdx-ew-3Go" firstAttribute="centerY" secondItem="YFi-za-1xc" secondAttribute="centerY" id="9TC-jG-fXh"/>
+                                        <constraint firstItem="DYO-3G-PL1" firstAttribute="centerY" secondItem="YFi-za-1xc" secondAttribute="centerY" id="BPL-17-Yr8"/>
+                                        <constraint firstItem="DYO-3G-PL1" firstAttribute="top" secondItem="YFi-za-1xc" secondAttribute="top" constant="8" id="nJD-7Q-CUq"/>
+                                        <constraint firstItem="DYO-3G-PL1" firstAttribute="leading" secondItem="YFi-za-1xc" secondAttribute="leading" constant="8" id="tHd-U5-nNZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="pdx-ew-3Go" secondAttribute="trailing" constant="8" id="ue7-Ta-XjW"/>
+                                        <constraint firstItem="pdx-ew-3Go" firstAttribute="leading" secondItem="DYO-3G-PL1" secondAttribute="trailing" constant="8" id="xdI-Fy-ABu"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="BPL-17-Yr8"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="starImageView" destination="DYO-3G-PL1" id="mGV-Ib-zIP"/>
+                                    <outlet property="starLabel" destination="pdx-ew-3Go" id="UiX-YH-8hV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zXo-2h-ENW" id="6M0-vL-xUt"/>
+                            <outlet property="delegate" destination="zXo-2h-ENW" id="xse-4x-fnO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qyL-RP-Oex"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQX-mz-Mcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="403"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oNP-9P-mFC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewJ-He-3vf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZk-aQ-QO9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zXo-2h-ENW" kind="relationship" relationship="rootViewController" id="BLP-80-u7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeN-Gk-vu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="403"/>
+        </scene>
+    </scenes>
+</document>
