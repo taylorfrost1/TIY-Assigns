@@ -26,14 +26,6 @@ class MovieTableViewController: UITableViewController {
                     if let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary {
                         
                         print(jsonDict)
-
-//                        let theMovie = Movie()
-//                        
-//                        if let page = jsonDict["page"] as? String {
-//                            theMovie.page = page
-//                        } else {
-//                            print("Could not parse the pages")
-//                        }
                         
                         if let resultsArray = jsonDict["results"] as? JSONArray {
                             
@@ -126,7 +118,7 @@ class MovieTableViewController: UITableViewController {
                 } catch {
                     print("Something went wrong parsing the data")
                 }
-                }
+            }
             
             
         } else {

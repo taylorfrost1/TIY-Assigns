@@ -40,42 +40,8 @@ class Movie {
         self.vote_average = 0
     }
     
-//    init(title: String, posterPath: String) {
-//        self.page = page
-//        self.poster_path = posterPath
-//        self.adult = adult
-//        self.overview = overview
-//        self.release_date = release_date
-//        
-//        self.originalTitle = originalTitle
-        
-        
-        
-        
-        
-    }
+}
     
-//    init(jsonDictionary: JSONDictionary) {
-//        
-//        if let posterPath = jsonDictionary["poster_path"] as? String {
-//            //print(posterPath)
-//            
-//            self.posterPath = "http://image.tmdb.org/t/p/w500\(posterPath)"
-//            
-//        } else {
-//            print("I couldnt parse the PosterPath")
-//        }
-//        
-//        if let title = jsonDictionary["original_title"] as? String {
-//            //print(title)
-//            
-//            self.title = title
-//            
-//        } else {
-//            print("I couldnt parse the title")
-//        }
-//        
-//    }
-//}
+
 
    
