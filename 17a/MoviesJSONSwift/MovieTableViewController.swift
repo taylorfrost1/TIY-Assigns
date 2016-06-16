@@ -41,6 +41,8 @@ class MovieTableViewController: UITableViewController {
                                 
                                 let theMovie = Movie()
                                 
+                                self.moviesArray.append(theMovie)
+                                
                                 if let posterPath = dict["poster_path"] as? String {
                                     theMovie.poster_path = posterPath
                                     
@@ -114,9 +116,13 @@ class MovieTableViewController: UITableViewController {
                                     print("The voteAverage could not be parsed")
                                 }
                             }
+                            
+                            
                         }
                         
+                        
                     }
+            
                 } catch {
                     print("Something went wrong parsing the data")
                 }
@@ -155,7 +161,9 @@ class MovieTableViewController: UITableViewController {
 
         let movie = self.moviesArray[indexPath.row]
         
-//        cell.textLabel?.text = movie.originalTitle as s
+        cell.textLabel?.text = movie.title
+        
+        return cell
 
     }
     

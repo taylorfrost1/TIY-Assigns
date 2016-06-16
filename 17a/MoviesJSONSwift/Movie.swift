@@ -10,17 +10,17 @@ import Foundation
 
 class Movie {
     
-    var page: NSString = ""
-    var poster_path: NSString = ""
+    var page: String = ""
+    var poster_path: String = ""
     var adult: Bool = true
-    var overview: NSString = ""
-    var release_date: NSString = ""
-    var id: NSInteger = 0
-    var originalTitle: NSString = ""
-    var title: NSString = ""
-    var backdrop_path: NSString = ""
+    var overview: String = ""
+    var release_date: String = ""
+    var id: Int = 0
+    var originalTitle: String = ""
+    var title: String = ""
+    var backdrop_path: String = ""
     var popularity: Double = 0
-    var vote_count: NSInteger = 0
+    var vote_count: Int = 0
     var video: Bool = true
     var vote_average: Double = 0
     
@@ -40,9 +40,9 @@ class Movie {
         self.vote_average = 0
     }
     
-    init(title: String, posterPath: String) {
+//    init(title: String, posterPath: String) {
 //        self.page = page
-        self.poster_path = posterPath
+//        self.poster_path = posterPath
 //        self.adult = adult
 //        self.overview = overview
 //        self.release_date = release_date
@@ -76,6 +76,6 @@ class Movie {
 //        }
 //        
 //    }
-}
+//}
 
    
