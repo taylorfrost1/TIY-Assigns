@@ -60,8 +60,8 @@ class MovieTableViewController: UITableViewController {
                                     print("The release date could not be parsed")
                                 }
                                 
-                                if let id = dict["id"] as? Int{
-                                    theMovie.id = id
+                                if let movieid = dict["id"] as? Int{
+                                    theMovie.movieid = movieid
                                 } else {
                                     print("The id could not be parsed")
                                 }

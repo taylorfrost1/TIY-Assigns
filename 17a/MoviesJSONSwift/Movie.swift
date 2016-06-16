@@ -15,7 +15,7 @@ class Movie {
     var adult: Bool = true
     var overview: String = ""
     var release_date: String = ""
-    var id: Int = 0
+    var movieid: Int = 0
     var originalTitle: String = ""
     var title: String = ""
     var backdrop_path: String = ""
@@ -30,7 +30,7 @@ class Movie {
         self.adult = true
         self.overview = ""
         self.release_date = ""
-        self.id = 0
+        self.movieid = 0
         self.originalTitle = ""
         self.title = ""
         self.backdrop_path = ""
