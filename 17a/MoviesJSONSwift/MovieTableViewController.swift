@@ -49,7 +49,7 @@ class MovieTableViewController: UITableViewController {
                                 }
                                 
                                 if let adult = dict["adult"] as? Bool{
-                                    theMovie.adult.boolValue
+                                    theMovie.adult = adult
                                 } else {
                                     print("I could not parse the adult")
                                 }
@@ -60,11 +60,59 @@ class MovieTableViewController: UITableViewController {
                                     print("The overviews could not be parsed")
                                 }
                             
-                                if let releaseDate = dict["string"] as? String{
+                                if let releaseDate = dict["release_date"] as? String{
                                     theMovie.release_date = releaseDate
                                 } else {
+                                    print("The release date could not be parsed")
+                                }
                                 
+                                if let id = dict["id"] as? Int{
+                                    theMovie.id = id
+                                } else {
+                                    print("The id could not be parsed")
+                                }
                                 
+                                if let originalTitle = dict["original_title"] as? String{
+                                    theMovie.originalTitle = originalTitle
+                                } else {
+                                    print("The originalTitle could not be parsed")
+                                }
+                                
+                                if let title = dict["title"] as? String{
+                                    theMovie.title = title
+                                } else {
+                                    print("The title could not be parsed")
+                                }
+                                
+                                if let backdropPath = dict["backdrop_path"] as? String{
+                                    theMovie.backdrop_path = backdropPath
+                                } else {
+                                    print("The backdropPath could not be parsed")
+                                }
+                                
+                                if let popularity = dict ["popularity"] as? Double{
+                                    theMovie.popularity = popularity
+                                } else {
+                                    print("The popularity could not be parsed")
+                                }
+                                
+                                if let voteCount = dict["vote_count"] as? Int{
+                                    theMovie.vote_count = voteCount
+                                } else {
+                                    print("The voteCount could not be parsed")
+                                }
+                                
+                                if let video = dict["video"] as? Bool{
+                                    theMovie.video = video
+                                } else {
+                                    print("The video could not be parsed")
+                                }
+                                
+                                if let voteAverage = dict["vote_average"] as? Double{
+                                    theMovie.vote_average = voteAverage
+                                } else {
+                                    print("The voteAverage could not be parsed")
+                                }
                             }
                         }
                         
@@ -73,8 +121,17 @@ class MovieTableViewController: UITableViewController {
                     print("Something went wrong parsing the data")
                 }
                 }
-            }
             
+            
+        } else {
+            print("The file could not be parsed")
+        }
+          print(moviesArray.count)
+        
+        for theMovie in moviesArray {
+            
+            print(theMovie.title)
+        }
             
         }
     
@@ -84,22 +141,24 @@ class MovieTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return self.moviesArray.count
     }
 
   
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-    
+        let movie = self.moviesArray[indexPath.row]
+        
+//        cell.textLabel?.text = movie.originalTitle as s
 
-        return cell
     }
     
-
 }
+
+

@@ -104,7 +104,6 @@
 				FD81ABED1D11C3BC00856576 /* AppDelegate.swift */,
 				FDF48F3D1D11CB81004ADEBE /* Modal */,
 				FDF48F3A1D11CA7F004ADEBE /* Views */,
-				FD81AC211D11C49400856576 /* View Controllers */,
 				FD81ABF11D11C3BC00856576 /* Main.storyboard */,
 				FD81ABF41D11C3BC00856576 /* Assets.xcassets */,
 				FD81ABF61D11C3BC00856576 /* LaunchScreen.storyboard */,
@@ -143,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				FDF48F381D11CA75004ADEBE /* StarTableViewCell.swift */,
+				FD81AC211D11C49400856576 /* View Controllers */,
 			);
 			name = Views;
 			sourceTree = "<group>";
