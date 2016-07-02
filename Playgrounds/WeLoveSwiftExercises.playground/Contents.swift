@@ -224,11 +224,9 @@ var str = "Hello, playground"
 //var totalCost = mealCost + tipCost
 
 //3.4
-
 var number = 5.1517
 
 var roundedNumber = Double(round(10*number)/10)
-
 
 
 
