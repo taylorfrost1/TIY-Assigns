@@ -144,12 +144,93 @@ var str = "Hello, playground"
 //}
 
 //2.8
-var a = 5
-var b = 6
-var c = 4
-var d = 3
+//var a = 5
+//var b = 6
+//var c = 4
+//var d = 3
+//
+//var min = a
+//
+//if b < min  {
+//    min = b
+//}
+//
+//if c < min {
+//    min = c
+//}
+//
+//if d < min {
+//   min = d
+//}
+//
+//print(min)
 
-if 
+//2.9
+
+//let number = 210
+//
+//if number % 3 == 0 && number % 5 == 0 && number % 7 == 0 {
+//    print("\(number) is divisable by 3, 5, and 7")
+//} else {
+//    print ("\(number)is not divisable by 3, 5, and 7")
+//}
+
+//2.10
+//var x = 1
+//var y = 2
+//var lowX =  1
+//var lowY = 1
+//var highX = 3
+//var highY = 3
+//
+//if x >= lowX && x <= highX && y >= lowY && y <= highY {
+//    
+//    print("inside")
+//    
+//} else {
+//    print("outisde")
+//}
+
+//2.11
+//var hp = 75
+//
+//if hp > 0 && hp < 20 {
+//    
+//    hp = 20
+//} else if hp % 10 != 0 {
+//   hp = hp / 10
+//   hp = hp + 1
+//   hp = hp * 10
+//}
+//print(hp)
+
+//3.1
+//var a = 2.0
+//var b = 5.0
+//var sum = a + b
+//var average = sum / 2
+
+//3.2
+//var finalsGrade = 2.0
+//var midtermGrade = 4.0
+//var projectGrade = 3.0
+//
+//print(finalsGrade * 0.5 + midtermGrade * 0.2 + projectGrade * 0.3)
+
+//3.3
+//var mealCost: Double = 3.5
+//var tip: Int = 25
+//var tipCost = mealCost + Double(tip) / 100.0
+//var totalCost = mealCost + tipCost
+
+//3.4
+
+var number = 5.1517
+
+var roundedNumber = Double(round(10*number)/10)
+
+
+
 
 
 
