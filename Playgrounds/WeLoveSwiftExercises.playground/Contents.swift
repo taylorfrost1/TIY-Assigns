@@ -249,11 +249,30 @@ var str = "Hello, playground"
 //    Double(numberOfFields) * numberOfYield + newYield
 //}
 
+//4.1
+//var n = 10
+//for _ in 1...n {
+//    print("I will not skip the fundamentals")
+//}
 
+//4.2
+//var n = 10
+//var count = 1
+//
+//while count <= n {
+//    
+//    print(count * count)
+//    count = count + 1
+//}
 
-
-
-
+//4.3
+var n = 10
+var count = 2
+while count <= n {
+    print(count)
+    count = count * 2
+    
+}
 
 
 
