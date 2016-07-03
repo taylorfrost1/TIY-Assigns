@@ -224,9 +224,32 @@ var str = "Hello, playground"
 //var totalCost = mealCost + tipCost
 
 //3.4
-var number = 5.1517
+//var number = 5.1517
+//var newNumber = Int(number * 10)
+//var roundedNumber = Double(newNumber)/10.0
 
-var roundedNumber = Double(round(10*number)/10)
+//3.5
+//var grade1 = 7.0
+//var grade2 = 9.0
+//var grade3 = 5.0
+//var yourGrade = 8.0
+//var averageGrade = (grade1 + grade2 + grade3 + yourGrade) / 4
+//if yourGrade > averageGrade {
+//    print("Above average")
+//} else {
+//    print("Not above average")
+//}
+
+//3.6
+//var numberOfFields:Int = 5
+//var numberOfYield:Double = 7.5
+//var weatherWasGood:Bool = true
+//if weatherWasGood == true {
+//    var newYield = numberOfYield * 5 * 0.5
+//    Double(numberOfFields) * numberOfYield + newYield
+//}
+
+
 
 
 
