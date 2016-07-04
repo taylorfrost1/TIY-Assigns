@@ -312,8 +312,223 @@ var str = "Hello, playground"
 //}
 
 //4.7
+//var n = 3
+//for i in 1...n {
+//    for j in 1...n {
+//        print("*", terminator: "")
+//    }
+//    print("")
+//}
 
+//4.8
+//var n = 3
+//for i in 1...n  {
+//    for j in 0..<(n-i) {
+//        print(" " , terminator: "" )
+//    }
+//    
+//    for j in 1...2*i-1{
+//        print("*", terminator: "")
+//    }
+//    
+//    print("")
+//}
 
+//4.9
+//let n = 4
+//
+//for i in 1...n {
+//    for j in 0..<(n-i) {
+//        print(" ", terminator: "")
+//    }
+//    
+//    for j in 1...2*i-1 {
+//        print("*", terminator: "")
+//    }
+//    
+//    print("")
+//}
+//
+//if (n>1) {
+//    for j in 2...n {
+//        var i = n - j + 1
+//        for k in 0..<(n-i) {
+//            print(" ", terminator: "")
+//        }
+//        
+//        for k in 1...2*i-1 {
+//            print("*", terminator: "")
+//        }
+//        print("")
+//    }
+//}
 
+//4.10
+//let n = 3
+//
+//for i in 1...n {
+//    for _ in 1...2 {
+//        for _ in 0..<(n-i) {
+//        print(" ", terminator: "")
+//    }
+//    
+//    for _ in 1...2*i-1 {
+//        print("**", terminator: "")
+//    }
+//    
+//    print("")
+//    }
+//
+//}
 
+//4.11
+//let n = 8
+//print("+", terminator: "")
+//for _ in 1...n {
+//    print("-", terminator: "")
+//}
+//print("+")
+//
+//for i in 1...n {
+//    print("|", terminator: "")
+//    for j in 1...n {
+//        if i % 2 == j % 2 {
+//            print("#", terminator: "")
+//        
+//} else {
+//            print(" ", terminator: "")
+//    
+//        }
+//}
+//print("|")
+//
+//}
+//
+//print("+", terminator: "")
+//for _ in 1...n {
+//    print("-", terminator: "")
+//}
+//print("+")
+
+//4.12
+//var n = 10
+//
+//var a = 1
+//var b = 0
+//
+//for _ in 1...n {
+//    print(a)
+//    var tmp = a + b
+//    b = a
+//    a = tmp
+//}
+
+//4.13
+//var n = 5
+//
+//var leapYear = 2016
+//
+//var cnt = 0
+//
+//while cnt < n {
+//    print(leapYear)
+//    ++cnt
+//    leapYear += 4
+//    if leapYear % 100 == 0 && leapYear % 400 != 0 {
+//        leapYear += 4
+//    }
+//}
+
+//4.14
+//var number = 1234
+//while number > 0 {
+//    print(number % 10, terminator: "")
+//    number /= 10
+//}
+
+//4.15
+//var a = 24
+//var b = 18
+//
+//var maxDiv = a
+//
+//if b < maxDiv {
+//    maxDiv = b
+//}
+//
+//var gcd = 1
+//
+//for i in 1...maxDiv {
+//    if (a % i == 0) && (b % i == 0){
+//    gcd = 1
+//    }
+//}
+//
+//print(gcd)
+
+//4.16
+//var number = 17
+//
+//var numberOfDivisors = 0
+//
+//for i in 1...number {
+//    if number % 1 == 0 {
+//        numberOfDivisors += 1
+//    }
+//}
+//
+//if numberOfDivisors == 2 {
+//    print("prime")
+//} else {
+//    print("not prime")
+//}
+
+//4.17
+//var number = 10
+//print("\(number) = ", terminator: "")
+//var isFirst = true
+//for i in 2...number {
+//    if number % 1 == 0 {
+//        while (number % i == 0) {
+//            number /= i
+//            
+//            if isFirst {
+//                isFirst = false
+//            } else {
+//                print(" * ", terminator: "")
+//            }
+//            
+//            print(i, terminator: "")
+//        }
+//    }
+//}
+
+//4.18
+//var n = 10
+//
+//print(1)
+//
+//for i in 2...n{
+//    var isFree = true
+//    
+//    var a = i
+//    
+//    for j in 2...a {
+//        if a % j == 0 {
+//            var put = 0
+//            while (a % j == 0) {
+//                a /= j
+//                put += 1
+//            }
+//            
+//            if put > 1 {
+//                isFree = false
+//            }
+//        }
+//    }
+//    
+//    if isFree {
+//        print(i)
+//    }
+//}
 
