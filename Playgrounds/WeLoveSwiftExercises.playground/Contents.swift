@@ -532,3 +532,551 @@ var str = "Hello, playground"
 //    }
 //}
 
+//5.1
+//var firstName = "Andrei"
+//var lastName = "Puni"
+//
+//var fullName = firstName + " " + lastName
+
+//5.2
+//var a = 23
+//var b = 14
+//var sum = a + b
+//var formattedSum = "\(a) + \(b) = \(sum)"
+
+//5.3
+//var aString = "Replace the letter e with *"
+//
+//var replacedString = ""
+//
+//for character in aString.characters{
+//    var char = "\(character)"
+//    if char == "e" {
+//        replacedString = replacedString + "*"
+//    } else {
+//        replacedString = replacedString + char
+//    }
+//    
+//}
+
+//5.4
+//var aString = "this string has 29 characters"
+//var reverse = ""
+//
+//for character in aString.characters {
+//    var asString = "\(character)"
+//    reverse = asString + reverse
+//}
+//
+//print(reverse)
+
+//5.5
+//let aString = "anutforajaroftuna"
+//
+//var reverse = ""
+//
+//for character in aString.characters {
+//    var char = "\(character)"
+//    reverse = char + reverse
+//}
+//
+//print(aString == reverse)
+
+//5.6
+//var problem = "split this string into words on seperate lines"
+//var word = ""
+//for character in problem.characters {
+//    if character == " " {
+//        print(word)
+//        word = ""
+//    } else {
+//        word += "\(character)"
+//    }
+//}
+//
+//print(word)
+
+//5.7
+//var problem = "find the longest word in the problem description"
+//problem += ""
+//
+//var word = ""
+//var length = 0
+//
+//var max = 0
+//var longestWord = ""
+//
+//for character in problem.characters{
+//    if character == " " {
+//        if length > max {
+//            max = length
+//            longestWord = word
+//        }
+//        word = ""
+//        length = 0
+//    } else {
+//        word += "\(character)"
+//        length++
+//        
+//    }
+//}
+//print(longestWord)
+
+//5.8
+//func *(string: String, scalar: Int) -> String {
+//    let array = Array(count: scalar, repeatedValue: string)
+//    return array.joinWithSeparator("")
+//}
+//
+//var newLine = "\n"
+//
+//var n = 5
+//var m = 10
+//
+//var line = "*" * m
+//line += newLine
+//
+//var rectangle: String = line * n
+//
+//print(rectangle)
+
+//6.1
+//var listOfNumbers = [1,2, 3, 10, 100]
+//var maxVal = listOfNumbers[0]
+//for number in listOfNumbers {
+//    if maxVal < number {
+//        maxVal = number
+//    }
+//}
+//
+//print(maxVal)
+
+//6.2
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//
+//for number in listOfNumbers {
+//    if number % 2 != 0 {
+//        print(number)
+//    }
+//}
+
+//6.3
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//var sum = 0
+//for number in listOfNumbers {
+//    sum += number
+//}
+//
+//print(sum)
+
+//6.4
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//
+//var i = 1
+//
+//while i < listOfNumbers.count {
+//    print(listOfNumbers[i])
+//    i += 2
+//}
+
+//6.5
+//var listOfNumbers = [1, 2, 3, 10, 100, 2]
+//var i = listOfNumbers.count - 1
+//while i >= 0 {
+//    print(listOfNumbers[i])
+//    i--
+//}
+
+//6.6 
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//var firstIndex = 0
+//var lastIndex = listOfNumbers.count - 1
+//while firstIndex < lastIndex {
+//    var tmp = listOfNumbers[firstIndex]
+//    listOfNumbers[firstIndex] = listOfNumbers[lastIndex]
+//    listOfNumbers[lastIndex] = tmp
+//    
+//    ++firstIndex
+//    --lastIndex
+//    
+//}
+
+//6.7
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//var nElements = listOfNumbers.count
+//
+//for fixedIndex in 0..<nElements {
+//    for i in fixedIndex+1..<nElements {
+//        if listOfNumbers[fixedIndex] < listOfNumbers[i] {
+//            var tmp = listOfNumbers[fixedIndex]
+//            listOfNumbers[fixedIndex] = listOfNumbers[i]
+//            listOfNumbers[i] = tmp
+//        }
+//    }
+//}
+
+//6.8
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//var x = 10
+//var xAppears = false
+//for number in listOfNumbers {
+//    if number == x {
+//        xAppears = true
+//    }
+//}
+//
+//if xAppears {
+//    print("yes")
+//} else {
+//    print("no")
+//}
+
+//6.9
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//var otherNumbers = [1, 2, 3, 4, 5, 6]
+//
+//for otherNumber in otherNumbers {
+//    for number in listOfNumbers {
+//        if number == otherNumber{
+//            print(number)
+//            break
+//        }
+//    }
+//}
+
+//6.10
+//var listOfNumbers = [1, 2, 3, 10, 100]
+//var divisors = [7, 5]
+//
+//for number in listOfNumbers {
+//    for divisor in divisors {
+//        if number % divisor == 0 {
+//            print(number)
+//            break
+//        }
+//    }
+//}
+
+//6.11
+//var numbers = [12, 36, 720, 18]
+//var maxDiv = numbers[0]
+//for number in numbers {
+//    if number < maxDiv {
+//        maxDiv = number
+//    }
+//}
+//
+//var gcd = 1
+//
+//for divisor in 1...maxDiv {
+//    var dividesAll = true
+//    for number in numbers {
+//        if number % divisor != 0 {
+//            dividesAll = false
+//            break
+//        }
+//    }
+//    
+//    if dividesAll {
+//        gcd = divisor
+//    }
+//}
+//print(gcd)
+
+//6.12
+//var n = 30
+//var fibonacci = [1, 1]
+//for i in 2...n - 1 {
+//    fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
+//}
+//
+//for number in fibonacci {
+//    print(number)
+//}
+
+//6.13
+//var number = 60
+//var divisors: [Int] = []
+//for divisor in 1...number {
+//    if number % divisor == 0 {
+//        divisors.append(divisor)
+//    }
+//}
+//
+//for divisor in divisors {
+//    print(divisor)
+//}
+
+//6.14
+//var number = 12345
+//var digits: [Int] = []
+//while number > 0 {
+//    var digit = number % 10
+//    digits = [digit] + digits
+//    
+//    number /= 10
+//}
+//
+//for digit in digits {
+//    print(digits)
+//}
+
+//6.15
+//var listOfNumbers = [1, 2, 3, 1, 2, 10, 100]
+//
+//var unique: [Int] = []
+//
+//for number in listOfNumbers {
+//    var numberIsNew = true
+//    for otherNumber in unique {
+//        if number == otherNumber {
+//            numberIsNew = false
+//            break
+//        }
+//    }
+//    
+//    if numberIsNew {
+//        unique.append(number)
+//    }
+//}
+//
+//for number in unique {
+//    print(number)
+//}
+
+//7.1
+//func min2(a: Int, _ b: Int) -> Int {
+//    if a < b {
+//        return a
+//    } else {
+//        return b
+//    }
+//}
+
+//7.2
+//func lastDigit(number: Int) -> Int {
+//    return number % 10
+//}
+
+//7.3
+//func first (N: Int) -> [Int] {
+//    var numbers:[Int] = []
+//    for number in 1...N {
+//        numbers.append(number)
+//    }
+//    return numbers
+//}
+
+//7.4
+//import Foundation
+//
+//func countDown(N: Int) {
+//    var i = N
+//    while i > 0 {
+//        print(i)
+//        
+//        if i > 1 {
+//            sleep(1)
+//        }
+//        i--
+//    }
+//    print("GO!")
+//}
+
+//7.5
+//func divides(a: Int, _ b: Int) -> Bool {
+//    return a % b == 0
+//}
+//func countDivisors(number: Int) -> Int {
+//    var cnt = 0
+//    for i in 1...number {
+//        if divides(number, i) {
+//            ++cnt
+//        }
+//    }
+//    return cnt
+//}
+//
+//func isPrime(number: Int) -> Bool {
+//    return countDivisors(number) == 2
+//}
+
+//7.6
+//func printFirstPrimes(count: Int) {
+//    var i = 2
+//    var printed = 0
+//    while printed < count {
+//        if isPrime(i) {
+//            print(i)
+//            ++printed
+//        }
+//        
+//        ++i
+//    }
+//}
+
+//7.7
+//func repeatPrint(message: String, _ count: Int) {
+//    for i in 1...count {
+//        print(message, terminator: "")
+//    }
+//    
+//    print("")
+//}
+
+//7.8
+//func reverse(numbers: [Int]) -> [Int] {
+//    var reversed: [Int] = []
+//    
+//    for number in numbers {
+//        reversed.insert(number, atIndex: 0)
+//    }
+//    
+//    return reversed
+//}
+
+//7.9
+//func sum(numbers: [Int]) -> Int {
+//    var sum = 0
+//    
+//    for number in numbers {
+//        sum += number
+//    }
+//    
+//    return sum
+//}
+
+//7.10
+//func parseDigit(digit: String) -> Int {
+//    let digits = "0123456789"
+//    
+//    var result = 0
+//    
+//    for character in digits.characters {
+//        var d = "\(character)"
+//        
+//        if d == digit {
+//            return result
+//        }
+//        
+//        result += 1
+//    }
+//    
+//    return -1
+//}
+
+//7.11
+//func timeDifference(firstHour firstHour: Int,
+//                              firstMinute: Int,
+//                              secondHour: Int,
+//                              secondMinute: Int) -> Int {
+//    var hourDifference = secondHour - firstHour
+//    var minuteDifference = secondMinute - firstMinute
+//    
+//    if minuteDifference < 0 {
+//        hourDifference -= 1
+//        minuteDifference += 60
+//    }
+//
+//    return hourDifference * 60 + minuteDifference
+//}
+
+//7.12
+//func verifyParentheses(expression: String) -> Bool {
+//    var open = 0
+//    var closed = 0
+//    for char in expression.characters {
+//        var character = "\(char)"
+//        if character == "(" {
+//            ++open
+//        } else {
+//            ++closed
+//            if closed > open {
+//                return false
+//            }
+//        }
+//    }
+//    
+//    return open == closed
+//}
+
+//7.13
+//func levelCost(heights heights: [Int], maxJump: Int) -> Int {
+//    var totalEnergy = 0
+//    var lastHeight = 0
+//    
+//    for height in heights {
+//        if lastHeight == 0 {
+//            lastHeight = height
+//        } else {
+//            var jumpHeight = lastHeight - height
+//            if jumpHeight < 0 {
+//                jumpHeight = -jumpHeight
+//            }
+//            
+//            if jumpHeight > maxJump {
+//                return -1
+//            }
+//            
+//            if jumpHeight == 0 {
+//                
+//                totalEnergy += 1
+//                
+//            } else {
+//                totalEnergy += 2 * jumpHeight
+//            
+//        }
+//            
+//           lastHeight = height
+//        }
+//    }
+//    
+//        return totalEnergy
+//}
+
+//7.14
+//func push(number: Int, inout _ queue: [Int]) {
+//    queue.append(number)
+//}
+//
+//func pop(inout queue: [Int]) -> Int? {
+//    var result = queue.first
+//    
+//    if queue.count > 0 {
+//        queue.removeAtIndex(0)
+//    }
+//    
+//    return result
+//}
+
+//7.15
+//func push(number: Int, inout _ stack: [Int]) {
+//    stack.append(number)
+//}
+//
+//func top(stack: [Int]) -> Int? {
+//    if stack.count == 0 {
+//    return nil
+//    }
+//    
+//    return stack[stack.count - 1]
+//}
+//
+//func pop(inout stack: [Int]) -> Int? {
+//    var result = top(stack)
+//    
+//    if stack.count > 0 {
+//        stack.removeAtIndex(stack.count - 1)
+//    }
+//    
+//    return result
+//}
+
+//8.1
+
+
+
+
+
+
+
