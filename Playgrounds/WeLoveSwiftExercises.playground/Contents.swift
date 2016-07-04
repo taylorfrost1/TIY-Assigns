@@ -1073,6 +1073,532 @@ var str = "Hello, playground"
 //}
 
 //8.1
+//func fibonacci(i: Int) -> Int {
+//    if i <= 2 {
+//        return 1
+//    } else {
+//        return fibonacci(i - 1) + fibonacci(i - 2)
+//    }
+//}
+
+//8.2
+//func factorial(N: Int) -> Int {
+//    if N == 1 {
+//        return 1
+//    } else {
+//        return N * factorial(N - 1)
+//    }
+//}
+
+//8.3
+//func digits(number: Int) -> [Int] {
+//    if number >= 10 {
+//        let firstDigits = digits(number/10)
+//        let lastDigit = number % 10
+//        return firstDigits + [lastDigit]
+//    } else {
+//        return [number]
+//    }
+//}
+
+//8.4
+//func pow(x: Int, _ y: Int) -> Int {
+//    if y == 0 {
+//        return 1
+//    } else if y == 1 {
+//        return x
+//    } else {
+//        let xy2 = pow(x, y / 2)
+//        
+//        if y % 2 == 0 {
+//            return xy2 * xy2
+//        } else {
+//            return xy2 * xy2 * x
+//        }
+//    }
+//}
+
+//8.5
+//func gcd(a: Int, _ b: Int) -> Int {
+//    if b == 0 {
+//        return a
+//    } else {
+//        if a > b {
+//            return gcd(a-b, b)
+//        } else {
+//            return gcd(a, b-a)
+//        }
+//    }
+//}
+
+//8.6
+//func binarySearch(key: Int,
+//                  _ numbers: [Int],
+//                    left: Int = 0,
+//                    var right: Int = -1) -> Bool {
+//    if right == -1 {
+//        right = numbers.count - 1
+//    }
+//    if left < right {
+//        var mid = (left + right) / 2
+//        if key < numbers[mid] {
+//            return binarySearch(key, numbers, left: left, right: mid)
+//        } else if key > numbers[mid] {
+//            return binarySearch(key, numbers, left: mid + 1, right: right)
+//        } else {
+//            return true }
+//    } else {
+//        return numbers[left] == key
+//    }
+//}
+
+//8.7
+//func hanoi(N: Int,
+//           from firstPeg: String = "A",
+//                to secondPeg: String = "B",
+//                   using thirdPeg: String = "C") {
+//    if N == 1 {
+//        moveDisk(from: firstPeg, to: secondPeg)
+//    } else {
+//        hanoi(N - 1, from: firstPeg, to: thirdPeg, using: secondPeg)
+//        moveDisk(from: firstPeg, to: secondPeg)
+//        hanoi(N - 1, from: thirdPeg, to: secondPeg, using: firstPeg)
+//    }
+//}
+//hanoi(N)
+
+//9.1
+//func applyKTimes(K: Int, _ closure: () -> ()) {
+//    for _ in 1...K {
+//        closure() }
+//}
+
+//9.2
+//let numbers = [1, 2, 3, 4, 6, 8, 9, 3, 12, 11]
+//let multiples = numbers.filter { $0 % 3 == 0 }
+//print(multiples)
+
+//9.3
+//let numbers = [4, 7, 1, 9, 6, 5, 6, 9]
+//let max = numbers.reduce(numbers[0]) {
+//    if $0 > $1 {
+//        return $0
+//    } else {
+//        return $1 }
+//}
+//print(max)
+
+//9.4
+//let strings = ["We", "Heart", "Swift"]
+//let string = strings.reduce("") {
+//    if $0 == "" {
+//        return $1
+//    } else {
+//        return $0 + " " + $1
+//    }
+//}
+//print(string)
+
+//9.5
+//var numbers = [1, 2, 3, 4, 5, 6]
+//numbers.sortInPlace({ x, y in
+//    func countDivisors(number: Int) -> Int {
+//        var count = 0
+//        for i in 1...number {
+//            if number % i == 0 {
+//                ++count
+//            } }
+//        return count
+//    }
+//    return countDivisors(x) < countDivisors(y)
+//})
+
+//9.6
+//var numbers = [1, 2, 3, 4, 5, 6]
+//let sum = numbers.filter {
+//    $0 % 2 == 1
+//    }.map {
+//        $0 * $0
+//    }.reduce(0, combine: +)
+//print(sum)
+
+//9.7
+//func forEach(array: [Int], _ closure: Int -> ()) {
+//    for number in array {
+//        closure(number)
+//    }
+//}
+
+//9.8
+//func combineArrays(array1: [Int],
+//                   _ array2: [Int],
+//                     _ closure: (Int,Int) -> Int) -> [Int] {
+//    var result: [Int] = []
+//    for (var i = 0; i < array1.count; i++) {
+//        result.append(closure(array1[i],array2[i]))
+//    }
+//    return result
+//}
+
+//10.1
+//enum Direction {
+//    case Up
+//    case Down
+//    case Left
+//    case Right
+//}
+//var location = (x: 0, y: 0)
+//var steps: [Direction] = [.Up, .Up, .Left, .Down, .Left]
+//for step in steps {
+//    switch step {
+//    case .Up:
+//        location.y += 1
+//    case .Down:
+//        location.y -= 1
+//    case .Right:
+//        location.x += 1
+//    case .Left:
+//        location.x -= 1
+//    default:
+//        break
+//    } }
+//print(location)
+
+//10.2
+//func minmax(a: Int, _ b: Int) -> (Int, Int) {
+//    if a < b {
+//        return (a, b)
+//    } else {
+//        return (b, a)
+//    }
+//}
+
+//10.3
+//enum HandShape {
+//    case Rock
+//    case Paper
+//    case Scissors
+//}
+//enum MatchResult {
+//    case Win
+//    case Draw
+//    case Lose }
+//func match(first: HandShape, _ second: HandShape) -> MatchResult {
+//    if first == second {
+//        return .Draw
+//    }
+//    if first == .Rock && second == .Scissors {
+//        return .Win
+//    }
+//    if first == .Paper && second == .Rock {
+//        return .Win
+//    }
+//    if first == .Scissors && second == .Paper {
+//        return .Win
+//    }
+//    return .Lose
+//}
+
+//10.4
+//var a = (5,8)
+//var b = (17,9)
+//let numerator = a.0 * b.1 + b.0 * a.1
+//let denominator = a.1 * b.1
+//var sum = (numerator, denominator)
+
+//10.5
+//enum CoinType: Int {
+//    case Penny = 1
+//    case Nickle = 5
+//    case Dime = 10
+//    case Quarter = 25
+//}
+//var moneyArray:[(Int,CoinType)] = [(10,.Penny),
+//                                   (15,.Nickle),
+//                                   (3,.Quarter),
+//                                   (20,.Penny),
+//                                   (3,.Dime),
+//                                   (7,.Quarter)]
+//var totalMoney = 0
+//for (amount, coinType) in moneyArray {
+//    totalMoney += amount * coinType.rawValue
+//}
+//print(totalMoney)
+
+//10.6
+//var strings = ["tuples", "are", "awesome", "tuples", "are", "cool",
+//               "tuples", "tuples", "tuples", "shades"]
+//var countedStrings: [(String,Int)] = []
+//for string in strings {
+//    var alreadyExists = false
+//    for i in 0..<countedStrings.count {
+//        if (countedStrings[i].0 == string) {
+//            countedStrings[i].1 += 1
+//            alreadyExists = true
+//        }
+//    }
+//    if alreadyExists == false {
+//        let tuple = (string,1)
+//        countedStrings.append((string,1))
+//    }
+//}
+
+//11.1
+//var code = [
+//    "a" : "b",
+//    "b" : "c",
+//    "c" : "d",
+//    "d" : "e",
+//    "e" : "f",
+//    "f" : "g",
+//    "g" : "h",
+//    "h" : "i",
+//    "i" : "j",
+//    "j" : "k",
+//    "k" : "l",
+//    "l" : "m",
+//    "m" : "n",
+//    "n" : "o",
+//    "o" : "p",
+//    "p" : "q",
+//    "q" : "r",
+//    "r" : "s",
+//    "s" : "t",
+//    "t" : "u",
+//    "u" : "v",
+//    "v" : "w",
+//    "w" : "x",
+//    "x" : "y",
+//    "y" : "z",
+//    "z" : "a" ]
+//var message = "hello world"
+//var encodedMessage = ""
+//for char in message.characters {
+//    var character = "\(char)"
+//    if let encodedChar = code[character] {
+//        // letter
+//        encodedMessage += encodedChar
+//    } else {
+//        // space
+//        encodedMessage += character
+//    }
+//}
+//print(encodedMessage)
+
+//11.2
+//var code = [
+//"a" : "b",
+//"b" : "c",
+//"c" : "d",
+//"d" : "e",
+//"e" : "f",
+//"f" : "g",
+//"g" : "h",
+//"h" : "i",
+//"i" : "j",
+//"j" : "k",
+//"k" : "l",
+//"l" : "m",
+//"m" : "n",
+//"n" : "o",
+//"o" : "p",
+//"p" : "q",
+//"q" : "r",
+//"r" : "s",
+//"s" : "t",
+//"t" : "u",
+//"u" : "v",
+//"v" : "w",
+//"w" : "x",
+//"x" : "y",
+//"y" : "z",
+//"z" : "a" ]
+//var encodedMessage = "uijt nfttbhf jt ibse up sfbe"
+//var decoder: [String:String] = [:]
+//for (key, value) in code {
+//    decoder[value] = key
+//    }
+//var decodedMessage = ""
+//for char in encodedMessage.characters {
+//    var character = "\(char)"
+//if let encodedChar = decoder[character] {
+//    decodedMessage += encodedChar
+//    } else {
+//
+//    decodedMessage += character
+//    }
+//}
+//print(decodedMessage)
+
+//11.3
+//var people: [[String:String]] = [
+//[
+//"firstName": "Calvin",
+//"lastName": "Newton"
+//],
+//[
+//"firstName": "Garry",
+//"lastName": "Mckenzie"
+//], [
+//"lastName": "Rivera"
+//],
+//[
+//"firstName": "Sonja",
+//"lastName": "Moreno"
+//], [
+//"lastName": "Bowen"
+//    ]
+//]
+//var firstNames: [String] = []
+//for person in people {
+//if let firstName = person["firstName"] {
+//print(firstName)
+//firstNames.append(firstName)
+//    }
+//}
+
+//11.4
+//var people: [[String:String]] = [
+//[
+//"firstName": "Calvin",
+//"lastName": "Newton"
+//],
+//[
+//"firstName": "Garry",
+//"lastName": "Mckenzie"
+//], [
+//"lastName": "Rivera"
+//],
+//[
+//"firstName": "Sonja",
+//"lastName": "Moreno"
+//], [
+//"lastName": "Bowen"
+//]
+//]
+//var fullNames: [String] = []
+//
+//for person in people {
+//    var fullName = " "
+//    for (key, value) in person {
+//        if key == "lastName" {
+//            fullName += value
+//        } else {
+//            fullName = value + fullName
+//    }
+//
+//}
+//
+//    fullNames += [fullName]
+//}
+//print (fullNames)
+
+//11.5
+//var people: [[String:Any]] = [
+//[
+//"firstName": "Calvin",
+//"lastName": "Newton",
+//"score": 13
+//], [
+//"firstName": "Garry",
+//"lastName": "Mckenzie",
+//"score": 23
+//], [
+//"firstName": "Leah",
+//"lastName": "Rivera",
+//"score": 10
+//], [
+//"firstName": "Sonja",
+//"lastNAme": "Moreno",
+//"score": 3
+//], [
+//"firstName":"Noel"
+//"lastName":"Bowen"
+//"score": 16
+//]
+//]
+//var topPerson = people[0]
+//var bestScore = topPerson["score"] as? Int
+//for person in people {
+//    if let score = person["score"] as? Int {
+//        if bestScore < score  {
+//        bestScore = score
+//        topPerson = person
+//        }
+//    }
+//}
+//
+//if let first = topPerson["firstName"] as? String,
+//second = topPerson["lastName"] as? String  {
+//        print("\(first) \(second)")
+//    }
+
+//11.6
+//var people: [[String:Any]] = [
+//[
+//"firstName": "Calvin",
+//"lastName": "Newton",
+//"score": 13
+//], [
+//"firstName": "Garry",
+//"lastName": "Mckenzie",
+//"score": 23
+//], [
+//"firstName": "Leah",
+//"lastName": "Rivera",
+//"score": 10
+//], [
+//"firstName": "Sonja",
+//"lastNAme": "Moreno",
+//"score": 3
+//], [
+//"firstName":"Noel"
+//"lastName":"Bowen"
+//"score": 16
+//    ]
+//]
+//func compareScores(first: [String:Any], second: [String:Any]) -> Bool {
+//    if let a = first["score"] as? Int {
+//        if let b = second["score"] as? Int {
+//    return a > b
+//    }
+//}
+//return false
+//}
+//people.sortInPlace(compareScores)
+//for (index, person) in people.enumerate() {
+//    if let firstName = person["firstName"] as? String {
+//        if let lastName = person["lastName"] as? String  {
+//            if let score = person["score"] as? Int {
+//            print("\(index + 1). \(firstName) \(lastName) - \(score)")
+//            }
+//        }
+//    }
+//}
+
+//11.7
+//var numbers = [1, 2, 3, 2, 3, 5, 2, 1, 3, 4, 2, 2, 2]
+//var frequency: [Int:Int] = [:]
+//var uniqueNumbers: [Int] = []
+//for number in numbers {
+//    if let oldFr = frequency[number] {
+//        frequency[number] = oldFr + 1
+//    } else {
+//        uniqueNumbers.append(number)
+//        frequency[number] = 1
+//    }
+//}
+//uniqueNumbers.sortInPlace(<)
+//for number in uniqueNumbers {
+//    print("\(number) \(frequency[number]!)")
+//
+//}
+
+
+
+
+
+
 
 
 
