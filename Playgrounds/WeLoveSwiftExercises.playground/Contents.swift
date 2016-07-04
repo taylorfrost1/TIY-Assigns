@@ -266,13 +266,52 @@ var str = "Hello, playground"
 //}
 
 //4.3
-var n = 10
-var count = 2
-while count <= n {
-    print(count)
-    count = count * 2
-    
-}
+//var n = 10
+//var count = 2
+//while count <= n {
+//    print(count)
+//    count = count * 2
+//    
+//}
+
+//4.4
+//var n = 5
+//var left = 1
+//var right = n
+//while left < right {
+//print(left)
+//print(right)
+//++left
+//--right
+//}
+//
+//if left == right {
+//    print(left)
+//}
+
+//4.5
+//var n = 2
+//
+//for i in 1...n {
+//    for i in 1...n{
+//        print("", terminator: "")
+//    }
+//    print("")
+//}
+
+//4.6
+//var n = 3
+//var m = 7
+//
+//for i  in 1...n {
+//    for j in 1...m {
+//        print("*", terminator: "")
+//    }
+//    
+//    print("")
+//}
+
+//4.7
 
 
 
