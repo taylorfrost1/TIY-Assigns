@@ -1591,18 +1591,14 @@ var str = "Hello, playground"
 //uniqueNumbers.sortInPlace(<)
 //for number in uniqueNumbers {
 //    print("\(number) \(frequency[number]!)")
-//
 //}
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
